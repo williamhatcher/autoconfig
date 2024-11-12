@@ -5,7 +5,7 @@
         <displayShortName>Hatcher Email</displayShortName>
             <incomingServer type="imap">
             <hostname>imap.gmail.com</hostname>
-            <port></port>
+            <port><993/port>
             <socketType>SSL</socketType>
             <authentication>OAuth2</authentication>
             <username>%EMAILADDRESS%</username>
@@ -18,16 +18,14 @@
             <username>%EMAILADDRESS%</username>
         </outgoingServer>
     </emailProvider>
-    <!--
     <addressBook type="carddav">
         <username>%EMAILADDRESS%</username>
         <authentication>OAuth2</authentication>
-        <serverURL></serverURL>
+        <serverURL>https://www.googleapis.com/carddav/v1/principals/%EMAILADDRESS%/lists/default/</serverURL>
     </addressBook>
     <calendar type="caldav">
         <username>%EMAILADDRESS%</username>
         <authentication>OAuth2</authentication>
-        <serverURL></serverURL>
+        <serverURL>https://apidata.googleusercontent.com/caldav/v2/%EMAILADDRESS%/events/</serverURL>
     </calendar>
-    -->
 </clientConfig>
